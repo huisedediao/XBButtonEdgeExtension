@@ -20,12 +20,19 @@ UIButton的图片文字位置排布拓展，支持图在上文字在下、图在
     [super viewDidLoad];
     
     testBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+    
     [self.view addSubview:testBtn];
+    
     testBtn.frame=CGRectMake(20, 100, 250, 130);
+    
     testBtn.backgroundColor=[UIColor orangeColor];
+    
     [testBtn setTitle:@"lufy" forState:UIControlStateNormal];
+    
     [testBtn setImage:[UIImage imageNamed:@"LUFY"] forState:UIControlStateNormal];
+    
     testBtn.titleLabel.textColor=[UIColor whiteColor];
+    
     [testBtn imageLeftAndTitleRightWithImageHScale:0.2 spaceOfImageAndTitle:20 side:XBLCRSideLeft sideSpace:10];
 }
 
